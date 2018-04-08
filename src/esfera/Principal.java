@@ -20,15 +20,7 @@ public class Principal {
 			raio = entrada.nextDouble();
 		}
 		System.out.println("\nPrograma encerrado");
-		// do {
-		// System.out.print("Digite o raio da esfera: ");
-		// raio = entrada.nextDouble();
-		// e.setRaio(raio);
-		// System.out.println("O raio da esfera é: "
-		// + String.format("%.2f", e.getRaio()) + " cm");
-		// System.out.println("O volume da esfera é: "
-		// + String.format("%.2f", e.volumeDaEsfera()) + " cm3\n");
-		// } while (raio != 0);
+
 	}
 
 }
