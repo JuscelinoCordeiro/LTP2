@@ -11,13 +11,13 @@ public class Mamifero extends Animal {
 		this.nomeDono = nomeDono;
 	}
 
-	public float getCotaDiariaLeite() {
-		return cotaDiariaLeite;
-	}
-
-	public void setCotaDiariaLeite(float cotaDiariaLeite) {
-		this.cotaDiariaLeite = cotaDiariaLeite;
-	}
+//	public float getCotaDiariaLeite() {
+//		return cotaDiariaLeite;
+//	}
+//
+//	public void setCotaDiariaLeite(float cotaDiariaLeite) {
+//		this.cotaDiariaLeite = cotaDiariaLeite;
+//	}
 
 	public String getNomeDono() {
 		return nomeDono;
@@ -31,6 +31,13 @@ public class Mamifero extends Animal {
 		if (isVivo()) {
 			this.cotaDiariaLeite += cotaDeLeite;
 		}
+	}
+
+	@Override
+	public String toString() {
+//		super.toString() ;
+		return super.toString() + "\nMamifero [ cotaDiariaLeite = " + cotaDiariaLeite + ", nomeDono = "
+				+ nomeDono + " ]";
 	}
 	
 	

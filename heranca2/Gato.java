@@ -14,9 +14,9 @@ public class Gato extends Mamifero{
 		return noMuro;
 	}
 
-	public void setNoMuro(boolean noMuro) {
-		this.noMuro = noMuro;
-	}
+//	public void setNoMuro(boolean noMuro) {
+//		this.noMuro = noMuro;
+//	}
 	
 	public void miar() {
 		if (isVivo()) {
@@ -33,5 +33,11 @@ public class Gato extends Mamifero{
 			this.noMuro = false;
 		}
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() + "\nGato [ noMuro = " + noMuro + " ]";
+	}
+	
 	
 }

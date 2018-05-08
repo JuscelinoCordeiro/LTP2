@@ -50,10 +50,19 @@ public class Animal {
 		return this.vivo;
 	}
 
-	protected int fazerAniversario(){
-		this.idade++;
+	protected int fazerAniversario() {
+		if (isVivo()) {
+			this.idade++;
+		}
 		return this.idade;
+	}
+
+	@Override
+	public String toString() {
+		return "Animal [ vivo = " + vivo + ", nome = " + nome + ", idade = " + idade
+				+ " ]";
 	}
 	
 	
+
 }

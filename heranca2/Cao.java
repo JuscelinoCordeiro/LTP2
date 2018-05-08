@@ -8,8 +8,12 @@ public class Cao extends Mamifero {
 		super(vivo, nome, idade, cotaDiariaLeite, nomeDono);
 		// TODO Auto-generated constructor stub
 	}
-
+	
 	public boolean isVigiando() {
+		return vigiando;
+	}
+
+	public boolean vigiar() {
 		if (isVivo()) {
 			this.vigiando = true;
 		}
@@ -29,4 +33,10 @@ public class Cao extends Mamifero {
 		}
 	}
 
+	@Override
+	public String toString() {
+		return super.toString() + "\nCao [ vigiando = " + vigiando + " ]";
+	}
+
+	
 }
